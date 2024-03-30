@@ -37,7 +37,6 @@ const ChartView: React.FC<ChartViewProps> = (props) => {
 
     const getGradient = (data: any) => {
         if (!props.gradient) return data;
-        console.log("gradient");
         for (let i = 0; i < data["datasets"].length; i++) {
             if(i===0){
                 data["datasets"][i]["fill"] = '+1';
