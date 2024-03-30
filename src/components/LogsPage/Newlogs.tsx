@@ -68,6 +68,12 @@ function Logs() {
     setFlag(false);
     let timeRangeInMilliseconds = 0;
     switch (e.target.value) {
+      case 'Select Time Range':
+        timeRangeInMilliseconds = 60 * 1000;
+        break;
+      case 'Last 2 minutes':
+        timeRangeInMilliseconds = 2 * 60 * 1000;
+        break;
       case 'Last 5 minutes':
         timeRangeInMilliseconds = 2 * 60 * 1000;
         break;
